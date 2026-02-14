@@ -1,0 +1,39 @@
+{
+    "Navbar": {
+        "home": "Beranda",
+        "rooms": "Kamar",
+        "socialSpace": "Social Space",
+        "gallery": "Galeri",
+        "contact": "Kontak",
+        "bookNow": "Pesan Sekarang"
+    },
+    "Hero": {
+        "title": "Rasakan Ketenangan & <br /> <span class='text-secondary'>Nikmati Citarasa</span>",
+        "subtitle": "Destinasi unik yang memadukan kenyamanan guesthouse mewah dengan cita rasa lezat dari social space yang hidup.",
+        "bookStay": "Pesan Kamar",
+        "exploreSocial": "Jelajahi Social Space"
+    },
+    "Home": {
+        "welcomeTitle": "Selamat Datang di AQEYO",
+        "welcomeText": "Terletak di jantung alam, AQEYO menawarkan perpaduan unik antara akomodasi yang tenang dan keunggulan kuliner. Baik Anda mencari tempat istirahat yang damai di guesthouse kami yang nyaman atau ingin memanjakan lidah Anda di social space kami yang ramai, kami menjanjikan pengalaman tak terlupakan yang diperkaya dengan pesona dan kehangatan lokal.",
+        "offeringsTitle": "Temukan Penawaran Kami",
+        "offeringsSubtitle": "Dari penginapan yang nyaman hingga kopi artisan, jelajahi apa yang membuat kami istimewa.",
+        "guesthouseTitle": "Guesthouse",
+        "guesthouseText": "Bersantailah di kamar kami yang dirancang dengan indah, menampilkan fasilitas modern, pemandangan taman yang tenang, dan kenyamanan terbaik untuk tidur malam yang nyenyak.",
+        "viewRooms": "Lihat Kamar & Fasilitas",
+        "socialSpaceTitle": "The Social Space",
+        "socialSpaceText": "Nikmati kopi lokal, makanan lezat, dan hidangan penutup yang menggugah selera dalam suasana terbuka yang semarak, sempurna untuk bersosialisasi atau bersantai.",
+        "exploreMenu": "Jelajahi Menu Kami",
+        "ctaTitle": "Siap untuk Liburan Anda?",
+        "ctaText": "Pesan penginapan Anda hari ini dan rasakan keajaiban AQEYO.",
+        "planStay": "Rencanakan Liburan Sekarang",
+        "testimonialsTitle": "Kata Tamu Kami"
+    },
+    "Footer": {
+        "description": "Rasakan perpaduan sempurna antara ketenangan dan cita rasa. Destinasi guesthouse dan social space unik yang dirancang untuk kenyamanan dan kepuasan Anda.",
+        "quickLinks": "Tautan Cepat",
+        "contactUs": "Hubungi Kami",
+        "openingHours": "Jam Buka",
+        "rightsReserved": "AQEYO. Hak cipta dilindungi."
+    }
+}

@@ -41,7 +41,7 @@ export default function ReservationForm() {
                         id="name"
                         name="name"
                         required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-gray-700"
                         value={formData.name}
                         onChange={handleChange}
                     />
@@ -55,7 +55,7 @@ export default function ReservationForm() {
                             id="date"
                             name="date"
                             required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-gray-700"
                             value={formData.date}
                             onChange={handleChange}
                         />
@@ -67,7 +67,7 @@ export default function ReservationForm() {
                             id="time"
                             name="time"
                             required
-                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-gray-700"
                             value={formData.time}
                             onChange={handleChange}
                         />
@@ -79,7 +79,7 @@ export default function ReservationForm() {
                     <select
                         id="guests"
                         name="guests"
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-gray-700"
                         value={formData.guests}
                         onChange={handleChange}
                     >
@@ -97,7 +97,7 @@ export default function ReservationForm() {
                         id="email"
                         name="email"
                         required
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all text-gray-700"
                         value={formData.email}
                         onChange={handleChange}
                     />
@@ -109,7 +109,7 @@ export default function ReservationForm() {
                         id="requests"
                         name="requests"
                         rows={3}
-                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none text-gray-700"
                         value={formData.requests}
                         onChange={handleChange}
                     />

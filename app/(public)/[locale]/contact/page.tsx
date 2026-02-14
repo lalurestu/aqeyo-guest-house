@@ -25,7 +25,7 @@ export default function ContactPage() {
             <div className="relative h-[50vh] w-full flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="https://images.unsplash.com/photo-1445583934551-30c1cded8359?q=80&w=2073&auto=format&fit=crop"
+                        src="/assets/img/img4.jpeg"
                         alt="Contact Us"
                         fill
                         className="object-cover"
@@ -57,7 +57,7 @@ export default function ContactPage() {
                                 <FaMapMarkerAlt className="text-secondary text-xl mt-1 mr-4" />
                                 <div>
                                     <h4 className="font-semibold text-foreground">Address</h4>
-                                    <p className="text-gray-600">123 Serenity Lane, Nature Valley, Lombok, Indonesia</p>
+                                    <p className="text-gray-600">Kotaraja, Sikur, East Lombok, NTB, Indonesia</p>
                                 </div>
                             </div>
                             <div className="flex items-center">

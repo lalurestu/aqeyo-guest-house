@@ -21,7 +21,7 @@ export default function GalleryPage() {
                     <h1 className="text-4xl md:text-6xl font-bold text-white font-serif mb-4">
                         Moments Captured
                     </h1>
-                    <p className="text-lg md:text-xl text-primary max-w-2xl mx-auto">
+                    <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
                         A visual journey through the serenity and vibrancy of Bale Bangket.
                     </p>
                 </div>

@@ -5,17 +5,17 @@ import Image from "next/image";
 import { Button } from "./ui/Button";
 import { AnimatePresence, motion } from "framer-motion";
 
-const categories = ["All", "Guesthouse", "Cafe", "Events"];
+const categories = ["All", "Guesthouse", "Social Space", "Events"];
 
 const photos = [
-    { id: 1, src: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=2070&auto=format&fit=crop", category: "Guesthouse", alt: "Guesthouse Exterior" },
-    { id: 2, src: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop", category: "Cafe", alt: "Cafe Interior" },
-    { id: 3, src: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop", category: "Events", alt: "Wedding Event" },
-    { id: 4, src: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=2070&auto=format&fit=crop", category: "Guesthouse", alt: "Luxury Room" },
-    { id: 5, src: "https://images.unsplash.com/photo-1498804103079-a6351b050096?q=80&w=1974&auto=format&fit=crop", category: "Cafe", alt: "Coffee Art" },
-    { id: 6, src: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=2070&auto=format&fit=crop", category: "Events", alt: "Live Music" },
-    { id: 7, src: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=2070&auto=format&fit=crop", category: "Guesthouse", alt: "Poolside" },
-    { id: 8, src: "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1974&auto=format&fit=crop", category: "Cafe", alt: "Evening Vibe" },
+    { id: 1, src: "/assets/img/img1.jpeg", category: "Guesthouse", alt: "Bale Bangket Serenity" },
+    { id: 2, src: "/assets/img/img2.jpeg", category: "Guesthouse", alt: "Guesthouse Interior" },
+    { id: 3, src: "/assets/img/img3.jpeg", category: "Social Space", alt: "Social Space Ambience" },
+    { id: 4, src: "/assets/img/img4.jpeg", category: "Events", alt: "Gathering Space" },
+    { id: 5, src: "/assets/img/img5.jpeg", category: "Guesthouse", alt: "Cozy Rooms" },
+    { id: 6, src: "/assets/img/img6.jpeg", category: "Social Space", alt: "Social Space Atmosphere" },
+    { id: 7, src: "/assets/img/img7.jpeg", category: "Social Space", alt: "Dining Area" },
+    { id: 8, src: "/assets/img/img8.jpeg", category: "Social Space", alt: "Coffee & Drinks" },
 ];
 
 export default function GalleryGrid() {

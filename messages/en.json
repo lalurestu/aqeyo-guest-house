@@ -1,0 +1,39 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "rooms": "The Rooms",
+        "socialSpace": "Social Space",
+        "gallery": "Gallery",
+        "contact": "Contact",
+        "bookNow": "Book Now"
+    },
+    "Hero": {
+        "title": "Experience Serenity & <br /> <span class='text-secondary'>Savor Delights</span>",
+        "subtitle": "A unique destination blending the comfort of a luxury guesthouse with the vibrant flavors of a public social space.",
+        "bookStay": "Book a Stay",
+        "exploreSocial": "Explore Social Space"
+    },
+    "Home": {
+        "welcomeTitle": "Welcome to AQEYO",
+        "welcomeText": "Nestled in the heart of nature, AQEYO offers a unique fusion of peaceful accommodation and culinary excellence. Whether you're seeking a restful escape in our cozy guesthouse or looking to indulge your taste buds at our lively social space, we promise an unforgettable experience enriched with local charm and warmth.",
+        "offeringsTitle": "Discover Our Offerings",
+        "offeringsSubtitle": "From comfortable stays to artisan coffee, explore what makes us special.",
+        "guesthouseTitle": "The Guesthouse",
+        "guesthouseText": "Relax in our beautifully designed rooms, featuring modern amenities, serene garden views, and the ultimate comfort for a perfect night's sleep.",
+        "viewRooms": "View Rooms & Amenities",
+        "socialSpaceTitle": "The Social Space",
+        "socialSpaceText": "Savor locally sourced coffee, delicious meals, and mouth-watering desserts in a vibrant, open-air setting perfect for socializing or unwinding.",
+        "exploreMenu": "Explore Our Menu",
+        "ctaTitle": "Ready for Your Getaway?",
+        "ctaText": "Book your stay today and experience the magic of AQEYO.",
+        "planStay": "Plan Your Stay Now",
+        "testimonialsTitle": "What Our Guests Say"
+    },
+    "Footer": {
+        "description": "Experience the perfect blend of serenity and flavor. A unique guesthouse and social space destination designed for your comfort and delight.",
+        "quickLinks": "Quick Links",
+        "contactUs": "Contact Us",
+        "openingHours": "Opening Hours",
+        "rightsReserved": "AQEYO. All rights reserved."
+    }
+}

@@ -1,24 +1,28 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link } from "@/i18n/routing";
+import { usePathname } from "@/i18n/routing";
 import { clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-
-const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "The Rooms", href: "/rooms" },
-    { name: "The Cafe", href: "/cafe" },
-    { name: "Gallery", href: "/gallery" },
-    { name: "Contact", href: "/contact" },
-];
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
+    const t = useTranslations('Navbar');
+
+
+    const navLinks = [
+        { name: t('home'), href: "/" },
+        { name: t('rooms'), href: "/rooms" },
+        { name: t('socialSpace'), href: "/social-space" },
+        { name: t('gallery'), href: "/gallery" },
+        { name: t('contact'), href: "/contact" },
+    ];
 
     const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -29,7 +33,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex-shrink-0">
                         <span className="text-2xl font-bold text-primary font-serif tracking-wide">
-                            Bale Bangket
+                            AQEYO
                         </span>
                     </Link>
 
@@ -43,7 +47,7 @@ export default function Navbar() {
                                     className={twMerge(
                                         clsx(
                                             "text-foreground hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors",
-                                            pathname === link.href && "text-primary font-semibold"
+                                            pathname === link.href && "text-primary font-bold"
                                         )
                                     )}
                                 >
@@ -54,8 +58,9 @@ export default function Navbar() {
                                 href="/rooms"
                                 className="bg-secondary text-secondary-foreground hover:bg-secondary/90 px-5 py-2.5 rounded-full text-sm font-semibold transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                             >
-                                Book Now
+                                {t('bookNow')}
                             </Link>
+                            <LanguageSwitcher />
                         </div>
                     </div>
 
@@ -95,7 +100,7 @@ export default function Navbar() {
                                     className={twMerge(
                                         clsx(
                                             "text-foreground hover:text-primary hover:bg-subtle/10 block px-3 py-2 rounded-md text-base font-medium",
-                                            pathname === link.href && "text-primary font-semibold bg-subtle/5"
+                                            pathname === link.href && "text-primary font-bold bg-subtle/5"
                                         )
                                     )}
                                 >
@@ -107,8 +112,11 @@ export default function Navbar() {
                                 onClick={() => setIsOpen(false)}
                                 className="w-full text-center mt-4 bg-secondary text-secondary-foreground hover:bg-secondary/90 block px-3 py-3 rounded-full text-base font-semibold shadow-md"
                             >
-                                Book Now
+                                {t('bookNow')}
                             </Link>
+                            <div className="px-3 py-3">
+                                <LanguageSwitcher />
+                            </div>
                         </div>
                     </motion.div>
                 )}

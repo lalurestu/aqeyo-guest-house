@@ -6,7 +6,7 @@ import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
 
-export default async function CafePage() {
+export default async function SocialSpacePage() {
     const menus = await prisma.menu.findMany();
 
     // Group menus by category
@@ -47,7 +47,7 @@ export default async function CafePage() {
                 <div className="absolute inset-0">
                     <Image
                         src="/assets/img/img5.jpeg"
-                        alt="Cafe Ambience"
+                        alt="Social Space Ambience"
                         fill
                         className="object-cover"
                         priority
@@ -103,12 +103,12 @@ export default async function CafePage() {
                     <Section className="bg-subtle/5 pt-0 lg:pt-16">
                         <div className="text-center mb-8">
                             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4 font-serif">
-                                The Atmosphere
+                                The Ambience
                             </h2>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-64 md:h-80">
                             <div className="relative col-span-2 row-span-2 rounded-xl overflow-hidden">
-                                <Image src="/assets/img/img7.jpeg" alt="Cafe Interior" fill className="object-cover hover:scale-105 transition-transform duration-500" />
+                                <Image src="/assets/img/img7.jpeg" alt="Social Space Interior" fill className="object-cover hover:scale-105 transition-transform duration-500" />
                             </div>
                             <div className="relative rounded-xl overflow-hidden">
                                 <Image src="/assets/img/img8.jpeg" alt="Latte Art" fill className="object-cover hover:scale-105 transition-transform duration-500" />
@@ -135,9 +135,8 @@ export default async function CafePage() {
                                 <div className="flex items-start">
                                     <FaMapMarkerAlt className="text-xl mt-1 mr-4 text-secondary/80" />
                                     <p className="leading-relaxed text-white/90">
-                                        123 Serenity Lane,<br />
-                                        Nature Valley, Lombok,<br />
-                                        Indonesia
+                                        Kotaraja, Sikur,<br />
+                                        East Lombok, NTB, Indonesia <br />
                                     </p>
                                 </div>
                                 <div className="flex items-start">
@@ -154,7 +153,7 @@ export default async function CafePage() {
                         {/* Reservation Form */}
                         <div>
                             <h3 className="text-2xl font-bold mb-6 font-serif text-secondary">Reservations</h3>
-                            <p className="mb-6 text-white/80 text-sm">
+                            <p className="mb-6 leading-relaxed text-white/90">
                                 Reserve your spot for an unforgettable dining experience. For larger parties, please contact us directly.
                             </p>
                             <ReservationForm />

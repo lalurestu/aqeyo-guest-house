@@ -2,20 +2,21 @@
 
 :root {
   /* Color Palette */
-  --primary: #DDA0DD;
-  /* Plum */
-  --primary-foreground: #36454F;
-  --secondary: #FFD700;
-  /* Gold */
-  --secondary-foreground: #36454F;
-  --background: #F8F8F8;
-  /* Off-White */
-  --foreground: #36454F;
-  /* Charcoal Gray */
-  --subtle: #A9A9A9;
-  /* Dark Gray */
-  --success: #8FBC8F;
-  /* Dark Sea Green */
+  /* Color Palette - Minimalist & Elegant */
+  --primary: #2C3E50;
+  /* Dark Slate - Sophisticated & Strong */
+  --primary-foreground: #FFFFFF;
+  --secondary: #fffb00a8;
+  /* Muted Beige/Bronze - Elegant Accent */
+  --secondary-foreground: #2C3E50;
+  --background: #FFFFFF;
+  /* Pure White */
+  --foreground: #1F2937;
+  /* Soft Black/Dark Gray */
+  --subtle: #F3F4F6;
+  /* Light Gray for sections */
+  --success: #646464;
+  /* Emerald for success states */
 
   /* Font Variables (will be set by next/font in layout) */
   --font-sans: var(--font-geist-sans);

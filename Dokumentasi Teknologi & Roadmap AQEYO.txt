@@ -1,0 +1,65 @@
+Dokumentasi Teknologi & Roadmap Pengembangan Sistem AQEYO
+Dokumen ini menjelaskan secara teknis "Tech Stack" yang membangun website Bale Bangket, serta rekomendasi untuk pengembangan jangka panjang (scalability).
+
+1. Core Framework: Next.js 16 (App Router)
+Apa itu?: Framework React paling populer saat ini untuk membangun aplikasi web full-stack. Anda menggunakan versi terbaru (16) dengan sistem App Router.
+Fungsi: Menangani tampilan (Frontend), Routing (pindah halaman), dan API (Backend) dalam satu proyek.
+Keunggulan:
+SEO Friendly: Google mudah membaca situs Anda karena Server-Side Rendering (SSR).
+Performa: Halaman dimuat sangat cepat karena optimasi otomatis.
+Next Step / Upgrade:
+Memanfaatkan Server Actions secara penuh untuk pengiriman formulir (mengurangi kode API manual).
+Implementasi Partial Prerendering (PPR) jika nanti dirilis stabil untuk performa loading yang lebih instan.
+
+
+2. Bahasa Pemrograman: TypeScript
+Apa itu?: Versi "lebih ketat" dari JavaScript yang mewajibkan pendefinisian tipe data.
+Fungsi: Menulis logika aplikasi.
+Keunggulan: Mencegah bug konyol (seperti salah ketik nama variabel) sebelum aplikasi dijalankan. Memudahkan maintenance jangka panjang karena kode lebih mudah dibaca/dimengerti mesin.
+Next Step:
+Menggunakan Zod untuk validasi data input dari user/admin secara ketat (misal: memastikan input harga benar-benar angka).
+
+
+3. Database & ORM: SQLite & Prisma
+Apa itu?:
+SQLite: Database berbasis file. Data disimpan di file lokal di folder proyek.
+Prisma: Jembatan (ORM) yang memudahkan kita mengambil/menulis data ke database menggunakan bahasa TypeScript, bukan SQL murni.
+Fungsi: Menyimpan data Admin, Menu Social Space, dan Kamar.
+Kelebihan saat ini: Gratis, sangat mudah disetup, tidak butuh server database terpisah. Cocok untuk fase awal.
+Keterbatasan: Sulit jika aplikasi di-deploy ke sistem Serverless (seperti Vercel) karena file database bisa hilang saat server restart/redeploy, kecuali menggunakan solusi khusus. Tidak didesain untuk ribuan user mengedit data bersamaan.
+Next Step / Upgrade (PENTING):
+Migrasi ke PostgreSQL: Jika website mulai ramai atau butuh di-hosting di cloud (AWS/Vercel), ganti SQLite dengan PostgreSQL (bisa pakai layanan gratis seperti Supabase atau Neon). Prisma memudahkan migrasi ini (cukup ubah 1 baris config)
+
+
+4. Styling: Tailwind CSS & Framer Motion
+Apa itu?:
+Tailwind CSS: Framework CSS utility-first untuk styling cepat langsung di HTML.
+Framer Motion: Library animasi untuk React.
+Fungsi: Membuat tampilan cantik, responsif (HP/Laptop), dan interaktif.
+Next Step:
+Membuat Design System baku (token warna, ukuran font) agar desain lebih konsisten jika fitur bertambah banyak.
+
+
+5. Internationalization: next-intl
+Apa itu?: Library untuk multibahasa.
+Fungsi: Mengatur routing /en atau /id dan memisahkan teks dari kode program.
+Next Step:
+Jika teks menjadi sangat banyak, file JSON bisa diganti dengan integrasi CMS (Content Management System) agar orang non-teknis bisa mengedit terjemahan tanpa menyentuh kode.
+
+
+6. Fitur Admin & Autentikasi (Custom)
+Status Saat Ini: Anda menggunakan sistem login kustom sederhana dengan enkripsi password standar.
+Keterbatasan: Fitur keamanan standar (belum ada "Lupa Password", 2FA, dll).
+Next Step:
+Menggunakan Auth.js (NextAuth) atau layanan pihak ketiga seperti Clerk/Kinde. Ini akan memberikan fitur keamanan kelas industri, login Google, dan manajemen sesi yang lebih aman.
+Rangkuman Rekomendasi Roadmap (Urutan Prioritas)
+Hosting/Deployment: Tentukan di mana website akan dionlinekan.
+Rekomendasi: Vercel (paling kompatibel dengan Next.js).
+Tindakan: Karena pakai SQLite, deploy di Vercel mungkin bermasalah dengan persistensi data. Sangat disarankan migrasi database ke PostgreSQL (Supabase) sebelum go-live jika deploy ke Vercel.
+Manajemen Gambar: Saat ini gambar upload admin mungkin disimpan di folder public lokal.
+Masalah: Di server cloud, file yang diupload user bisa hilang saat redeploy.
+Upgrade: Gunakan layanan penyimpanan gambar cloud seperti Cloudinary atau AWS S3 untuk menyimpan foto Menu/Kamar yang diupload admin.
+CMS Konten:
+Sekarang konten statis (kata-kata di Home/About) ada di file JSON.
+Upgrade: Gunakan Headless CMS (seperti Sanity.io atau Strapi) jika Anda ingin klien bisa mengedit teks "Welcome" atau "About Us" sendiri tanpa menghubungi programmer.
+Sistem Anda saat ini sudah sangat solid untuk tahap MVP (Minimum Viable Product) dan bisnis skala menengah. Fondasinya (Next.js + TypeScript + Prisma) adalah standar industri modern yang sangat mudah dikembangkan (scale-up).
