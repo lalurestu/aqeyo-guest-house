@@ -1,6 +1,6 @@
-# Bale Bangket Website
+# Aqeyo Guest Hose and Social Space
 
-This is a [Next.js](https://nextjs.org) project for Bale Bangket Guesthouse & Cafe.
+This is a [Next.js](https://nextjs.org) project for Aqeyo Guest Hose and Social Space.
 
 ## Getting Started
 
@@ -37,5 +37,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 =======
-# balebangket
+# Aqeyo
 >>>>>>> 9dc61d11549f9169c25877030da1441dc233e838
