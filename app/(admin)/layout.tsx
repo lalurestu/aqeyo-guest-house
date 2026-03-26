@@ -35,8 +35,8 @@ export default function AdminLayout(props: any) {
 
     const navItems = [
         { name: 'Dashboard', href: '/admin/dashboard', icon: FaHome },
-        { name: 'Rooms', href: '/admin/rooms', icon: FaBed },
-        { name: 'Cafe Menu', href: '/admin/cafe', icon: FaCoffee },
+        { name: 'Kamar', href: '/admin/rooms', icon: FaBed },
+        { name: 'Menu Cafe', href: '/admin/cafe', icon: FaCoffee },
     ];
 
     return (
@@ -61,7 +61,7 @@ export default function AdminLayout(props: any) {
                         <div className="flex flex-col h-full">
                             <div className="p-6 border-b">
                                 <h1 className="text-2xl font-bold text-gray-800 font-serif">AQEYO</h1>
-                                <p className="text-sm text-gray-500">Admin Dashboard</p>
+                                <p className="text-sm text-gray-500">Panel Admin</p>
                             </div>
 
                             <nav className="flex-1 p-4 space-y-2 overflow-y-auto">

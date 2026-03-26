@@ -40,7 +40,7 @@ export default function RoomFormPage({ params }: { params: Promise<{ id: string 
                     amenities: data.amenities ? JSON.parse(data.amenities).join(', ') : ''
                 });
             } else {
-                alert('Failed to load room data');
+                alert('Gagal memuat data kamar');
                 router.push('/admin/rooms');
             }
         } catch (error) {
@@ -86,27 +86,27 @@ export default function RoomFormPage({ params }: { params: Promise<{ id: string 
                 router.refresh();
             } else {
                 const errorData = await res.json();
-                alert(`Failed to save: ${errorData.error}`);
+                alert(`Gagal menyimpan: ${errorData.error}`);
             }
         } catch (error) {
             console.error('Error saving room', error);
-            alert('An unexpected error occurred');
+            alert('Terjadi kesalahan yang tidak terduga');
         } finally {
             setLoading(false);
         }
     };
 
-    if (fetching) return <div className="p-8 text-center text-gray-500">Loading room data...</div>;
+    if (fetching) return <div className="p-8 text-center text-gray-500">Memuat data kamar...</div>;
 
     return (
         <div className="max-w-2xl mx-auto">
             <h1 className="text-3xl font-bold text-gray-900 font-serif mb-8">
-                {isNew ? 'Create New Room' : 'Edit Room'}
+                {isNew ? 'Tambah Kamar Baru' : 'Edit Kamar'}
             </h1>
 
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 space-y-6">
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Name</label>
+                    <label className="block text-sm font-medium text-gray-700">Nama Kamar</label>
                     <input
                         type="text"
                         required
@@ -117,7 +117,7 @@ export default function RoomFormPage({ params }: { params: Promise<{ id: string 
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Slug (Unique ID)</label>
+                    <label className="block text-sm font-medium text-gray-700">Slug (ID Unik)</label>
                     <input
                         type="text"
                         required
@@ -129,19 +129,19 @@ export default function RoomFormPage({ params }: { params: Promise<{ id: string 
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Price (Display string)</label>
+                    <label className="block text-sm font-medium text-gray-700">Harga (tampilan teks, contoh: Rp 500.000)</label>
                     <input
                         type="text"
                         required
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-2 border"
                         value={formData.price}
                         onChange={(e) => setFormData({ ...formData, price: e.target.value })}
-                        placeholder="$100"
+                        placeholder="Rp 500.000"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Image</label>
+                    <label className="block text-sm font-medium text-gray-700">Gambar</label>
                     <div className="mt-1 flex items-center gap-4">
                         <div className="flex-1">
                             <input
@@ -149,7 +149,7 @@ export default function RoomFormPage({ params }: { params: Promise<{ id: string 
                                 className="block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-2 border bg-gray-50"
                                 value={formData.image}
                                 readOnly
-                                placeholder="Image path will appear here"
+                                placeholder="Path gambar akan muncul di sini"
                             />
                         </div>
                         <div className="relative">
@@ -170,15 +170,15 @@ export default function RoomFormPage({ params }: { params: Promise<{ id: string 
                                 htmlFor="image-upload"
                                 className="cursor-pointer px-4 py-2 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
                             >
-                                {file ? 'Change File' : 'Choose File'}
+                                {file ? 'Ganti File' : 'Pilih File'}
                             </label>
                         </div>
                     </div>
-                    {file && <p className="mt-1 text-xs text-green-600">Selected: {file.name}</p>}
+                    {file && <p className="mt-1 text-xs text-green-600">Dipilih: {file.name}</p>}
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Description</label>
+                    <label className="block text-sm font-medium text-gray-700">Deskripsi</label>
                     <textarea
                         required
                         rows={4}
@@ -189,13 +189,13 @@ export default function RoomFormPage({ params }: { params: Promise<{ id: string 
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Amenities (Comma separated)</label>
+                    <label className="block text-sm font-medium text-gray-700">Fasilitas (pisahkan dengan koma)</label>
                     <input
                         type="text"
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-2 border"
                         value={formData.amenities}
                         onChange={(e) => setFormData({ ...formData, amenities: e.target.value })}
-                        placeholder="WiFi, Pool, Breakfast"
+                        placeholder="WiFi, Kolam Renang, Sarapan"
                     />
                 </div>
 
@@ -205,14 +205,14 @@ export default function RoomFormPage({ params }: { params: Promise<{ id: string 
                         onClick={() => router.push('/admin/rooms')}
                         className="mr-4 px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900"
                     >
-                        Cancel
+                        Batal
                     </button>
                     <button
                         type="submit"
                         disabled={loading}
                         className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary disabled:opacity-70 transition-colors"
                     >
-                        {loading ? 'Saving...' : 'Save Room'}
+                        {loading ? 'Menyimpan...' : 'Simpan Kamar'}
                     </button>
                 </div>
             </form>

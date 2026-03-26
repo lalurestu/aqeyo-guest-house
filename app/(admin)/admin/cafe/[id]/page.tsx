@@ -33,7 +33,7 @@ export default function MenuFormPage({ params }: { params: Promise<{ id: string 
             if (res.ok) {
                 setFormData(data);
             } else {
-                alert('Failed to load menu data');
+                alert('Failed to load menu data - Gagal memuat data menu');
                 router.push('/admin/cafe');
             }
         } catch (error) {
@@ -64,27 +64,27 @@ export default function MenuFormPage({ params }: { params: Promise<{ id: string 
                 router.refresh();
             } else {
                 const errorData = await res.json();
-                alert(`Failed to save: ${errorData.error}`);
+                alert(`Gagal menyimpan: ${errorData.error}`);
             }
         } catch (error) {
             console.error('Error saving item', error);
-            alert('An unexpected error occurred');
+            alert('Terjadi kesalahan yang tidak terduga');
         } finally {
             setLoading(false);
         }
     };
 
-    if (fetching) return <div className="p-8 text-center text-gray-500">Loading data...</div>;
+    if (fetching) return <div className="p-8 text-center text-gray-500">Memuat data menu...</div>;
 
     return (
         <div className="max-w-2xl mx-auto">
             <h1 className="text-3xl font-bold text-gray-900 font-serif mb-8">
-                {isNew ? 'New Menu Item' : 'Edit Menu Item'}
+                {isNew ? 'Tambah Item Menu' : 'Edit Item Menu'}
             </h1>
 
             <form onSubmit={handleSubmit} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 space-y-6">
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Name</label>
+                    <label className="block text-sm font-medium text-gray-700">Nama Menu</label>
                     <input
                         type="text"
                         required
@@ -95,7 +95,7 @@ export default function MenuFormPage({ params }: { params: Promise<{ id: string 
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Category</label>
+                    <label className="block text-sm font-medium text-gray-700">Kategori</label>
                     <select
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-2 border"
                         value={formData.category}
@@ -109,19 +109,19 @@ export default function MenuFormPage({ params }: { params: Promise<{ id: string 
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Price (Display string)</label>
+                    <label className="block text-sm font-medium text-gray-700">Harga (tampilan teks, contoh: Rp 35.000)</label>
                     <input
                         type="text"
                         required
                         className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-primary focus:ring-primary sm:text-sm p-2 border"
                         value={formData.price}
                         onChange={(e) => setFormData({ ...formData, price: e.target.value })}
-                        placeholder="$10"
+                        placeholder="Rp 35.000"
                     />
                 </div>
 
                 <div>
-                    <label className="block text-sm font-medium text-gray-700">Description</label>
+                    <label className="block text-sm font-medium text-gray-700">Deskripsi</label>
                     <textarea
                         required
                         rows={3}
@@ -137,14 +137,14 @@ export default function MenuFormPage({ params }: { params: Promise<{ id: string 
                         onClick={() => router.push('/admin/cafe')}
                         className="mr-4 px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900"
                     >
-                        Cancel
+                        Batal
                     </button>
                     <button
                         type="submit"
                         disabled={loading}
                         className="px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary disabled:opacity-70 transition-colors"
                     >
-                        {loading ? 'Saving...' : 'Save Item'}
+                        {loading ? 'Menyimpan...' : 'Simpan Item'}
                     </button>
                 </div>
             </form>

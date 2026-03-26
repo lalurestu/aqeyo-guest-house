@@ -10,7 +10,7 @@ export default async function AdminDashboardPage() {
 
     return (
         <div>
-            <h1 className="text-3xl font-bold text-gray-900 mb-8 font-serif">Dashboard Overview</h1>
+            <h1 className="text-3xl font-bold text-gray-900 mb-8 font-serif">Ringkasan Dashboard</h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Rooms Card */}
@@ -19,7 +19,7 @@ export default async function AdminDashboardPage() {
                         <FaBed className="text-2xl" />
                     </div>
                     <div>
-                        <p className="text-sm font-medium text-gray-500">Total Rooms</p>
+                        <p className="text-sm font-medium text-gray-500">Total Kamar</p>
                         <p className="text-2xl font-bold text-gray-900">{roomsCount}</p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ export default async function AdminDashboardPage() {
                         <FaCoffee className="text-2xl" />
                     </div>
                     <div>
-                        <p className="text-sm font-medium text-gray-500">Menu Items</p>
+                        <p className="text-sm font-medium text-gray-500">Item Menu</p>
                         <p className="text-2xl font-bold text-gray-900">{menuCount}</p>
                     </div>
                 </div>

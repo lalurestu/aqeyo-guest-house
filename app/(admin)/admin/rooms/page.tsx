@@ -32,7 +32,7 @@ export default function RoomsManagementPage() {
     };
 
     const handleDelete = async (id: string) => {
-        if (!confirm('Are you sure you want to delete this room?')) return;
+        if (!confirm('Yakin ingin menghapus kamar ini?')) return;
 
         try {
             const res = await fetch(`/api/rooms/${id}`, {
@@ -41,7 +41,7 @@ export default function RoomsManagementPage() {
             if (res.ok) {
                 fetchRooms();
             } else {
-                alert('Failed to delete room');
+                alert('Gagal menghapus kamar');
             }
         } catch (error) {
             console.error('Error deleting room', error);
@@ -49,19 +49,19 @@ export default function RoomsManagementPage() {
     };
 
     if (loading) {
-        return <div className="p-8 text-center text-gray-500">Loading rooms...</div>;
+        return <div className="p-8 text-center text-gray-500">Memuat data kamar...</div>;
     }
 
     return (
         <div>
             <div className="flex justify-between items-center mb-8">
-                <h1 className="text-3xl font-bold text-gray-900 font-serif">Rooms Management</h1>
+                <h1 className="text-3xl font-bold text-gray-900 font-serif">Manajemen Kamar</h1>
                 <Link
                     href="/admin/rooms/new"
                     className="flex items-center px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
                 >
                     <FaPlus className="mr-2" />
-                    Add Room
+                    Tambah Kamar
                 </Link>
             </div>
 
@@ -69,17 +69,17 @@ export default function RoomsManagementPage() {
                 <table className="min-w-full divide-y divide-gray-200">
                     <thead className="bg-gray-50">
                         <tr>
-                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
-                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
-                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
-                            <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Nama</th>
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Harga</th>
+                            <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Deskripsi</th>
+                            <th className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Aksi</th>
                         </tr>
                     </thead>
                     <tbody className="bg-white divide-y divide-gray-200">
                         {rooms.length === 0 ? (
                             <tr>
                                 <td colSpan={4} className="px-6 py-8 text-center text-gray-500">
-                                    No rooms found. Create one to get started.
+                                    Belum ada kamar. Tambahkan kamar pertama Anda!
                                 </td>
                             </tr>
                         ) : (
