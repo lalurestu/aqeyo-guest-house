@@ -23,7 +23,7 @@ export default async function SocialSpacePage() {
     }, {});
 
     // Categories in display order
-    const categoryOrder = ["Signature Coffee", "Main Courses", "Desserts", "Beverages"];
+    const categoryOrder = ["Makanan", "Minuman", "Paket Se-Sele/Begibung", "Snack", "Dessert", "Tambahan"];
     const menuCategories = categoryOrder
         .filter(cat => groupedMenus[cat])
         .map(cat => ({

@@ -13,12 +13,12 @@ export default function MenuFormPage({ params }: { params: Promise<{ id: string 
         name: '',
         description: '',
         price: '',
-        category: 'Signature Coffee', // Default
+        category: 'Makanan', // Default
     });
     const [loading, setLoading] = useState(false);
     const [fetching, setFetching] = useState(!isNew);
 
-    const categories = ['Signature Coffee', 'Main Courses', 'Desserts', 'Beverages'];
+    const categories = ['Makanan', 'Minuman', 'Paket Se-Sele/Begibung', 'Snack', 'Dessert', 'Tambahan'];
 
     useEffect(() => {
         if (!isNew) {
