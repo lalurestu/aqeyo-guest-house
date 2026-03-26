@@ -127,7 +127,7 @@ export default function ContactPage() {
             {/* Map Section */}
             <section className="h-96 w-full relative bg-gray-200">
                 <iframe
-                    src="https://maps.app.goo.gl/q2ZnE7iAJeN5iYX98"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5105.935464833958!2d116.41517727603986!3d-8.593247591451776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdb50003846503%3A0x37e622a139004f53!2sAQEYO%20HOUSE!5e1!3m2!1sid!2sid!4v1774512366818!5m2!1sid!2sid"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
