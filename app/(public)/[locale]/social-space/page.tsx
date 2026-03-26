@@ -143,8 +143,8 @@ export default async function SocialSpacePage() {
                                     <FaClock className="text-xl mt-1 mr-4 text-secondary/80" />
                                     <div className="text-white/90">
                                         <p className="font-semibold mb-1">Opening Hours</p>
-                                        <p>Mon - Fri: 8am - 10pm</p>
-                                        <p>Sat - Sun: 8am - 11pm</p>
+                                        <p>Mon - Fri : 8 am - 10 pm</p>
+                                        <p>Sat - Sun : 8 am - 11 pm</p>
                                     </div>
                                 </div>
                             </div>

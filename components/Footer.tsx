@@ -76,7 +76,7 @@ export default function Footer() {
                             <li className="flex items-center">
                                 <FaEnvelope className="h-4 w-4 text-background mr-3 flex-shrink-0" />
                                 <a href="mailto:info@balebangket.com" className="text-background hover:text-secondary transition-colors">
-                                    info@balebangket.com
+                                    aqeyohouse@gmail.com
                                 </a>
                             </li>
                         </ul>
@@ -88,11 +88,11 @@ export default function Footer() {
                         <ul className="space-y-2 text-background">
                             <li className="flex justify-between">
                                 <span>Mon - Fri:</span>
-                                <span>8:00 AM - 10:00 PM</span>
+                                <span>9:00 am - 10:00 pm</span>
                             </li>
                             <li className="flex justify-between">
                                 <span>Sat - Sun:</span>
-                                <span>8:00 AM - 11:00 PM</span>
+                                <span>9:00 am - 11:00 pm</span>
                             </li>
                         </ul>
                     </div>

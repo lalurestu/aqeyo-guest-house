@@ -71,7 +71,7 @@ export default function ContactPage() {
                                 <FaEnvelope className="text-secondary text-xl mr-4" />
                                 <div>
                                     <h4 className="font-semibold text-foreground">Email</h4>
-                                    <a href="mailto:info@balebangket.com" className="text-gray-600 hover:text-primary transition-colors">info@balebangket.com</a>
+                                    <a href="mailto:aqeyohouse@gmail.com" className="text-gray-600 hover:text-primary transition-colors">aqeyohouse@gmail.com</a>
                                 </div>
                             </div>
                             <div className="flex items-center">
@@ -127,7 +127,7 @@ export default function ContactPage() {
             {/* Map Section */}
             <section className="h-96 w-full relative bg-gray-200">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15783.568779776953!2d116.3245465!3d-8.5089531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcdb4e47602334b%3A0x62804574944d186!2sLombok%2C%20West%20Nusa%20Tenggara!5e0!3m2!1sen!2sid!4v1714880000000!5m2!1sen!2sid"
+                    src="https://maps.app.goo.gl/q2ZnE7iAJeN5iYX98"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
