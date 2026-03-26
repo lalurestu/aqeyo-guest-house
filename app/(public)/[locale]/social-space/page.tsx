@@ -56,10 +56,10 @@ export default async function SocialSpacePage() {
                 </div>
                 <div className="relative z-10 text-center px-4">
                     <h1 className="text-4xl md:text-6xl font-bold text-white font-serif mb-4">
-                        Savor the Flavor
+                        Nikmati Setiap Sajian
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-                        A culinary journey celebrating local ingredients and global tastes.
+                        Perjalanan kuliner yang merayakan bahan-bahan lokal dengan cita rasa khas Lombok.
                     </p>
                 </div>
             </div>
@@ -70,10 +70,10 @@ export default async function SocialSpacePage() {
                     <Section className="bg-background">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-serif">
-                                Our Menu
+                                Menu Kami
                             </h2>
                             <p className="text-gray-600">
-                                Freshly prepared with love and passion.
+                                Disiapkan segar setiap hari dengan penuh cinta dan semangat.
                             </p>
                         </div>
 
@@ -103,7 +103,7 @@ export default async function SocialSpacePage() {
                     <Section className="bg-subtle/5 pt-0 lg:pt-16">
                         <div className="text-center mb-8">
                             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4 font-serif">
-                                The Ambience
+                                Suasana Tempat
                             </h2>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-64 md:h-80">
@@ -129,22 +129,22 @@ export default async function SocialSpacePage() {
 
                         {/* Location & Hours */}
                         <div>
-                            <h3 className="text-2xl font-bold mb-6 font-serif text-secondary">Visit Us</h3>
+                            <h3 className="text-2xl font-bold mb-6 font-serif text-secondary">Kunjungi Kami</h3>
 
                             <div className="space-y-6">
                                 <div className="flex items-start">
                                     <FaMapMarkerAlt className="text-xl mt-1 mr-4 text-secondary/80" />
                                     <p className="leading-relaxed text-white/90">
                                         Kotaraja, Sikur,<br />
-                                        East Lombok, NTB, Indonesia <br />
+                                        Lombok Timur, NTB, Indonesia <br />
                                     </p>
                                 </div>
                                 <div className="flex items-start">
                                     <FaClock className="text-xl mt-1 mr-4 text-secondary/80" />
                                     <div className="text-white/90">
-                                        <p className="font-semibold mb-1">Opening Hours</p>
-                                        <p>Mon - Fri : 8 am - 10 pm</p>
-                                        <p>Sat - Sun : 8 am - 11 pm</p>
+                                        <p className="font-semibold mb-1">Jam Buka</p>
+                                        <p>Senin - Jumat: 9.00 - 22.00</p>
+                                        <p>Sabtu - Minggu: 9.00 - 23.00</p>
                                     </div>
                                 </div>
                             </div>
@@ -152,9 +152,9 @@ export default async function SocialSpacePage() {
 
                         {/* Reservation Form */}
                         <div>
-                            <h3 className="text-2xl font-bold mb-6 font-serif text-secondary">Reservations</h3>
+                            <h3 className="text-2xl font-bold mb-6 font-serif text-secondary">Reservasi</h3>
                             <p className="mb-6 leading-relaxed text-white/90">
-                                Reserve your spot for an unforgettable dining experience. For larger parties, please contact us directly.
+                                Reservasi tempat duduk untuk pengalaman bersantap yang tak terlupakan. Untuk rombongan besar, hubungi kami langsung.
                             </p>
                             <ReservationForm />
                         </div>

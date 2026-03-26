@@ -8,12 +8,12 @@ import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
 const amenities = [
-    { icon: FaWifi, label: "Free High-Speed Wi-Fi" },
-    { icon: FaSwimmingPool, label: "Swimming Pool Access" },
-    { icon: FaCoffee, label: "Breakfast Included" },
-    { icon: FaParking, label: "Free Parking" },
-    { icon: FaTv, label: "Smart TV in Rooms" },
-    { icon: FaShower, label: "Hot & Cold Shower" },
+    { icon: FaWifi, label: "Wi-Fi Gratis Kecepatan Tinggi" },
+    { icon: FaSwimmingPool, label: "Akses Kolam Renang" },
+    { icon: FaCoffee, label: "Sarapan Termasuk" },
+    { icon: FaParking, label: "Parkir Gratis" },
+    { icon: FaTv, label: "Smart TV di Kamar" },
+    { icon: FaShower, label: "Shower Air Panas & Dingin" },
 ];
 
 // Helper to safe parse amenities
@@ -46,10 +46,10 @@ export default async function RoomsPage() {
                 </div>
                 <div className="relative z-10 text-center px-4">
                     <h1 className="text-4xl md:text-6xl font-bold text-white font-serif mb-4">
-                        Your Sanctuary Awaits
+                        Surga Kenyamanan Menanti Anda
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-                        Experience comfort, style, and tranquility in our carefully appointed rooms.
+                        Rasakan kenyamanan, gaya, dan ketenangan di kamar kami yang dirancang dengan penuh perhatian.
                     </p>
                 </div>
             </div>
@@ -58,10 +58,10 @@ export default async function RoomsPage() {
             <Section className="bg-background">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-serif">
-                        Our Rooms
+                        Kamar Kami
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        Each room is designed with your relaxation in mind, blending modern amenities with local aesthetics.
+                        Setiap kamar dirancang untuk kenyamanan Anda, memadukan fasilitas modern dengan estetika lokal yang khas.
                     </p>
                 </div>
 
@@ -75,14 +75,14 @@ export default async function RoomsPage() {
                                         {room.name}
                                     </h3>
                                 </div>
-                                <p className="text-primary font-bold text-lg mb-4">{room.price} <span className="text-sm text-gray-500 font-normal">/ night</span></p>
+                                <p className="text-primary font-bold text-lg mb-4">{room.price} <span className="text-sm text-gray-500 font-normal">/ malam</span></p>
 
                                 <p className="text-gray-600 text-sm mb-6 flex-grow">
                                     {room.description}
                                 </p>
 
                                 <div className="mb-6">
-                                    <h4 className="text-sm font-semibold text-primary mb-2">Highlights:</h4>
+                                    <h4 className="text-sm font-semibold text-primary mb-2">Fasilitas Unggulan:</h4>
                                     <ul className="text-sm text-gray-500 grid grid-cols-2 gap-x-2 gap-y-1">
                                         {roomAmenities.map((item: string, i: number) => (
                                             <li key={i} className="flex items-center">
@@ -100,7 +100,7 @@ export default async function RoomsPage() {
                                     className="block w-full"
                                 >
                                     <Button className="w-full">
-                                        Book via WhatsApp
+                                        Pesan via WhatsApp
                                     </Button>
                                 </a>
                             </Card>
@@ -113,10 +113,10 @@ export default async function RoomsPage() {
             <Section className="bg-subtle/5">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-serif">
-                        Included Amenities
+                        Fasilitas yang Tersedia
                     </h2>
                     <p className="text-gray-600 max-w-2xl mx-auto">
-                        Everything you need for a comfortable and convenient stay.
+                        Semua yang Anda butuhkan untuk menginap dengan nyaman dan menyenangkan.
                     </p>
                 </div>
 

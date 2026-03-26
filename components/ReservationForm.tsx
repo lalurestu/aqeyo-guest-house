@@ -31,11 +31,11 @@ export default function ReservationForm() {
 
     return (
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-lg border border-subtle/10">
-            <h3 className="text-2xl font-bold text-primary mb-6 font-serif text-center">Book a Table</h3>
+            <h3 className="text-2xl font-bold text-primary mb-6 font-serif text-center">Pesan Meja</h3>
 
             <div className="space-y-4">
                 <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nama</label>
                     <input
                         type="text"
                         id="name"
@@ -49,7 +49,7 @@ export default function ReservationForm() {
 
                 <div className="grid grid-cols-2 gap-4">
                     <div>
-                        <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-1">Date</label>
+                        <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-1">Tanggal</label>
                         <input
                             type="date"
                             id="date"
@@ -61,7 +61,7 @@ export default function ReservationForm() {
                         />
                     </div>
                     <div>
-                        <label htmlFor="time" className="block text-sm font-medium text-gray-700 mb-1">Time</label>
+                        <label htmlFor="time" className="block text-sm font-medium text-gray-700 mb-1">Jam</label>
                         <input
                             type="time"
                             id="time"
@@ -75,7 +75,7 @@ export default function ReservationForm() {
                 </div>
 
                 <div>
-                    <label htmlFor="guests" className="block text-sm font-medium text-gray-700 mb-1">Number of Guests</label>
+                    <label htmlFor="guests" className="block text-sm font-medium text-gray-700 mb-1">Jumlah Tamu</label>
                     <select
                         id="guests"
                         name="guests"
@@ -84,9 +84,9 @@ export default function ReservationForm() {
                         onChange={handleChange}
                     >
                         {[1, 2, 3, 4, 5, 6, 7, 8].map(num => (
-                            <option key={num} value={num}>{num} {num === 1 ? 'Guest' : 'Guests'}</option>
+                            <option key={num} value={num}>{num} {num === 1 ? 'Tamu' : 'Tamu'}</option>
                         ))}
-                        <option value="more">9+ Guests</option>
+                        <option value="more">9+ Tamu</option>
                     </select>
                 </div>
 
@@ -104,7 +104,7 @@ export default function ReservationForm() {
                 </div>
 
                 <div>
-                    <label htmlFor="requests" className="block text-sm font-medium text-gray-700 mb-1">Special Requests</label>
+                    <label htmlFor="requests" className="block text-sm font-medium text-gray-700 mb-1">Permintaan Khusus</label>
                     <textarea
                         id="requests"
                         name="requests"
@@ -116,7 +116,7 @@ export default function ReservationForm() {
                 </div>
 
                 <Button type="submit" className="w-full mt-2">
-                    Reserve Table
+                    Pesan Meja
                 </Button>
             </div>
         </form>

@@ -65,7 +65,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             <li className="flex items-start">
                                 <FaMapMarkerAlt className="h-5 w-5 text-background mt-1 mr-3 flex-shrink-0" />
-                                <span className="text-background">Kotaraja, Sikur, East Lombok, NTB, Indonesia</span>
+                                <span className="text-background">Kotaraja, Sikur, Lombok Timur, NTB, Indonesia</span>
                             </li>
                             <li className="flex items-center">
                                 <FaPhone className="h-4 w-4 text-background mr-3 flex-shrink-0" />
@@ -87,12 +87,12 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-6 text-white border-b border-gray-600 pb-2 inline-block">{t('openingHours')}</h3>
                         <ul className="space-y-2 text-background">
                             <li className="flex justify-between">
-                                <span>Mon - Fri:</span>
-                                <span>9:00 am - 10:00 pm</span>
+                                <span>Sen - Jum:</span>
+                                <span>09.00 - 22.00</span>
                             </li>
                             <li className="flex justify-between">
-                                <span>Sat - Sun:</span>
-                                <span>9:00 am - 11:00 pm</span>
+                                <span>Sab - Min:</span>
+                                <span>09.00 - 23.00</span>
                             </li>
                         </ul>
                     </div>

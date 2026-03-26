@@ -118,19 +118,19 @@ export default function Home(props: any) {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
             {
-              text: "The perfect mix of relaxation and great food. The vibe is amazing!",
+              text: "Perpaduan sempurna antara relaksasi dan makanan lezat. Suasananya luar biasa!",
               author: "Sarah D.",
-              role: "Guesthouse Guest",
+              role: "Tamu Guesthouse",
             },
             {
-              text: "Best coffee in town. I love coming here to work and enjoy the view.",
+              text: "Kopi terbaik di kota. Saya suka datang ke sini untuk bekerja sambil menikmati pemandangan.",
               author: "Michael R.",
-              role: "Regular Guest",
+              role: "Tamu Setia",
             },
             {
-              text: "A hidden gem. The staff was incredibly welcoming and the room was pristine.",
+              text: "Surga tersembunyi. Stafnya sangat ramah dan kamarnya sangat bersih.",
               author: "Jessica T.",
-              role: "Traveler",
+              role: "Wisatawan",
             },
           ].map((review, idx) => (
             <div
