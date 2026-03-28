@@ -144,7 +144,7 @@ export default async function SocialSpacePage() {
                                     <div className="text-white/90">
                                         <p className="font-semibold mb-1">Jam Buka</p>
                                         <p>Senin - Jumat: 9.00 - 22.00</p>
-                                        <p>Sabtu - Minggu: 9.00 - 23.00</p>
+                                        <p>Sabtu - Minggu: 9.00 - 23.59</p>
                                     </div>
                                 </div>
                             </div>

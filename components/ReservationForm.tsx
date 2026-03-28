@@ -21,8 +21,8 @@ export default function ReservationForm() {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
 
-        const phoneNumber = "6285333000452"; // User provided number
-        const message = `Halo Bale Bangket, saya ingin reservasi meja cafe.%0A%0ANama: ${formData.name}%0ATanggal: ${formData.date}%0AJam: ${formData.time}%0AJumlah Tamu: ${formData.guests}%0ARequest: ${formData.requests || "-"}`;
+        const phoneNumber = "6285253357789"; // User provided number
+        const message = `Halo Aqeyo, saya ingin reservasi meja cafe.%0A%0ANama: ${formData.name}%0ATanggal: ${formData.date}%0AJam: ${formData.time}%0AJumlah Tamu: ${formData.guests}%0ARequest: ${formData.requests || "-"}`;
 
         const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 

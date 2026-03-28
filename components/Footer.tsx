@@ -70,7 +70,7 @@ export default function Footer() {
                             <li className="flex items-center">
                                 <FaPhone className="h-4 w-4 text-background mr-3 flex-shrink-0" />
                                 <a href="tel:+6285333000452" className="text-background hover:text-secondary transition-colors">
-                                    +62 853-3300-0452
+                                    +62 852-5335-7789
                                 </a>
                             </li>
                             <li className="flex items-center">
@@ -92,7 +92,7 @@ export default function Footer() {
                             </li>
                             <li className="flex justify-between">
                                 <span>Sab - Min:</span>
-                                <span>09.00 - 23.00</span>
+                                <span>09.00 - 23.59</span>
                             </li>
                         </ul>
                     </div>

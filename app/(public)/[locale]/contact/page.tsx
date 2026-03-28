@@ -64,7 +64,7 @@ export default function ContactPage() {
                                 <FaPhone className="text-secondary text-xl mr-4" />
                                 <div>
                                     <h4 className="font-semibold text-foreground">Telepon</h4>
-                                    <a href="tel:+6285333000452" className="text-gray-600 hover:text-primary transition-colors">+62 853-3300-0452</a>
+                                    <a href="tel:+6285253357789" className="text-gray-600 hover:text-primary transition-colors">+62 852-5335-7789</a>
                                 </div>
                             </div>
                             <div className="flex items-center">
@@ -78,7 +78,7 @@ export default function ContactPage() {
                                 <FaWhatsapp className="text-secondary text-xl mr-4" />
                                 <div>
                                     <h4 className="font-semibold text-foreground">WhatsApp</h4>
-                                    <a href="https://wa.me/6285333000452" className="text-gray-600 hover:text-primary transition-colors">Chat dengan kami</a>
+                                    <a href="https://wa.me/6285253357789" className="text-gray-600 hover:text-primary transition-colors">Chat dengan kami</a>
                                 </div>
                             </div>
                         </div>

@@ -88,11 +88,10 @@ export default function CafeManagementPage() {
                     <button
                         key={cat}
                         onClick={() => setActiveCategory(cat)}
-                        className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                            activeCategory === cat
+                        className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${activeCategory === cat
                                 ? 'bg-primary text-white shadow-sm'
                                 : 'bg-white text-gray-600 border border-gray-200 hover:bg-gray-50'
-                        }`}
+                            }`}
                     >
                         {cat}
                         {cat !== 'Semua' && (

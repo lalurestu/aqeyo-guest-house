@@ -94,7 +94,7 @@ export default async function RoomsPage() {
                                 </div>
 
                                 <a
-                                    href={`https://wa.me/6285333000452?text=Halo Aqeyo, saya tertarik untuk booking kamar: *${room.name}*. Mohon info ketersediaannya.`}
+                                    href={`https://wa.me/6285253357789?text=Halo Aqeyo, saya tertarik untuk booking kamar: *${room.name}*. Mohon info ketersediaannya.`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="block w-full"
