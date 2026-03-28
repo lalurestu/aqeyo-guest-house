@@ -3,7 +3,7 @@
 import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -86,11 +86,11 @@ export default function ContactPage() {
                         <div>
                             <h4 className="font-semibold text-foreground mb-4">Ikuti Kami</h4>
                             <div className="flex space-x-4">
-                                <a href="#" className="w-10 h-10 rounded-full bg-subtle/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+                                <a href="https://www.instagram.com/aqeyohouse_/" className="w-10 h-10 rounded-full bg-subtle/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
                                     <FaInstagram className="text-xl" />
                                 </a>
-                                <a href="#" className="w-10 h-10 rounded-full bg-subtle/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
-                                    <FaFacebook className="text-xl" />
+                                <a href="https://wa.me/6285253357789" className="w-10 h-10 rounded-full bg-subtle/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
+                                    <FaWhatsapp className="text-xl" />
                                 </a>
                             </div>
                         </div>

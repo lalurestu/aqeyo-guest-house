@@ -23,10 +23,10 @@ export default function Footer() {
                             <a href="#" className="text-background hover:text-secondary transition-colors">
                                 <FaFacebook className="h-6 w-6" />
                             </a>
-                            <a href="#" className="text-background hover:text-secondary transition-colors">
+                            <a href="https://www.instagram.com/aqeyohouse_/" className="text-background hover:text-secondary transition-colors">
                                 <FaInstagram className="h-6 w-6" />
                             </a>
-                            <a href="#" className="text-background hover:text-secondary transition-colors">
+                            <a href="https://wa.me/6285253357789" className="text-background hover:text-secondary transition-colors">
                                 <FaWhatsapp className="h-6 w-6" />
                             </a>
                         </div>
