@@ -26,6 +26,32 @@ export default function Home(props: any) {
         </div>
       </Section>
 
+      {/* Call to Action Section */}
+      <Section className="relative bg-primary overflow-hidden">
+        <div className="absolute inset-0 opacity-10"></div>
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div className="text-left md:w-2/3">
+            <h2 className="text-3xl font-bold text-white mb-4 font-serif">
+              {t('ctaTitle')}
+            </h2>
+            <p className="text-white/90 text-lg">
+              {t('ctaText')}
+            </p>
+          </div>
+          <div className="md:w-1/3 text-right">
+            <Link href="/rooms">
+              <Button
+                variant="secondary"
+                size="lg"
+                className="w-full md:w-auto shadow-xl"
+              >
+                {t('planStay')}
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </Section>
+
       {/* Highlights Section */}
       <Section className="bg-subtle/5">
         <div className="text-center mb-12">
@@ -82,33 +108,9 @@ export default function Home(props: any) {
         </div>
       </Section>
 
-      {/* Call to Action Section */}
-      <Section className="relative bg-primary overflow-hidden">
-        <div className="absolute inset-0 opacity-10"></div>
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="text-left md:w-2/3">
-            <h2 className="text-3xl font-bold text-white mb-4 font-serif">
-              {t('ctaTitle')}
-            </h2>
-            <p className="text-white/90 text-lg">
-              {t('ctaText')}
-            </p>
-          </div>
-          <div className="md:w-1/3 text-right">
-            <Link href="/rooms">
-              <Button
-                variant="secondary"
-                size="lg"
-                className="w-full md:w-auto shadow-xl"
-              >
-                {t('planStay')}
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </Section>
 
-      Testimonials (Simplified)
+
+      {/* Testimonials (Simplified) */}
       {/* <Section className="bg-background">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-primary mb-4 font-serif">
