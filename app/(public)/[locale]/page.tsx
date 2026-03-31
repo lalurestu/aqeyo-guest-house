@@ -108,8 +108,8 @@ export default function Home(props: any) {
         </div>
       </Section>
 
-      {/* Testimonials (Simplified) */}
-      <Section className="bg-background">
+      Testimonials (Simplified)
+      {/* <Section className="bg-background">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-primary mb-4 font-serif">
             {t('testimonialsTitle')}
@@ -155,7 +155,7 @@ export default function Home(props: any) {
             </div>
           ))}
         </div>
-      </Section>
+      </Section> */}
     </div>
   );
 }

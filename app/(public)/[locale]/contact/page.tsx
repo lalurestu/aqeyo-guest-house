@@ -38,7 +38,7 @@ export default function ContactPage() {
                         Hubungi Kami
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-                        Kami senang mendengar dari Anda.
+                        Pendapat dari anda adalah masukan terbaik bagi kami.
                     </p>
                 </div>
             </div>
@@ -49,7 +49,7 @@ export default function ContactPage() {
                     <div>
                         <h2 className="text-3xl font-bold text-primary mb-6 font-serif">Informasi Kontak</h2>
                         <p className="text-gray-600 mb-8 leading-relaxed">
-                            Ada pertanyaan tentang pemesanan kamar atau menu cafe kami? Hubungi kami melalui telepon, email, atau kunjungi kami langsung.
+                            Ada pertanyaan tentang pemesanan kamar atau menu cafe kami? Hubungi kami melalui whatsapp, instagram, email, atau kunjungi kami langsung.
                         </p>
 
                         <div className="space-y-6 mb-10">

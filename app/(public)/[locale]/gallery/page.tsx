@@ -22,7 +22,7 @@ export default function GalleryPage() {
                         Momen yang Terabadikan
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-                        Perjalanan visual melalui ketenangan dan semangat AQEYO.
+                        Momen kebersamaan anda dan AQEYO akan kami abadikan disini.
                     </p>
                 </div>
             </div>

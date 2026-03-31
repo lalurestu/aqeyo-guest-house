@@ -46,7 +46,7 @@ export default async function RoomsPage() {
                 </div>
                 <div className="relative z-10 text-center px-4">
                     <h1 className="text-4xl md:text-6xl font-bold text-white font-serif mb-4">
-                        Surga Kenyamanan Menanti Anda
+                        Susasana Yang Nyaman Menanti Anda
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
                         Rasakan kenyamanan, gaya, dan ketenangan di kamar kami yang dirancang dengan penuh perhatian.

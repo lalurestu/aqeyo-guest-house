@@ -59,7 +59,7 @@ export default async function SocialSpacePage() {
                         Nikmati Setiap Sajian
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-                        Perjalanan kuliner yang merayakan bahan-bahan lokal dengan cita rasa khas Lombok.
+                        Perjalanan kuliner yang menikmati hidangan lokal dengan cita rasa khas Lombok.
                     </p>
                 </div>
             </div>
@@ -143,8 +143,8 @@ export default async function SocialSpacePage() {
                                     <FaClock className="text-xl mt-1 mr-4 text-secondary/80" />
                                     <div className="text-white/90">
                                         <p className="font-semibold mb-1">Jam Buka</p>
-                                        <p>Senin - Jumat: 9.00 - 22.00</p>
-                                        <p>Sabtu - Minggu: 9.00 - 23.59</p>
+                                        <p>Senin - Jumat: 10.00 - 22.00</p>
+                                        <p>Sabtu - Minggu: 10.00 - 23.59</p>
                                     </div>
                                 </div>
                             </div>
@@ -154,7 +154,7 @@ export default async function SocialSpacePage() {
                         <div>
                             <h3 className="text-2xl font-bold mb-6 font-serif text-secondary">Reservasi</h3>
                             <p className="mb-6 leading-relaxed text-white/90">
-                                Reservasi tempat duduk untuk pengalaman bersantap yang tak terlupakan. Untuk rombongan besar, hubungi kami langsung.
+                                Reservasi tempat duduk untuk pengalaman kuliner yang tak terlupakan. Silahkan hubungi kami langsung.
                             </p>
                             <ReservationForm />
                         </div>
