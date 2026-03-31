@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 // ... imports remain the same
 
@@ -48,6 +49,7 @@ export default async function RootLayout(props: any) {
           <Navbar />
           <main className="flex-grow">{children}</main>
           <Footer />
+          <ScrollToTop />
         </NextIntlClientProvider>
       </body>
     </html>

@@ -56,10 +56,10 @@ export default async function CafePage() {
                 </div>
                 <div className="relative z-10 text-center px-4">
                     <h1 className="text-4xl md:text-6xl font-bold text-white font-serif mb-4">
-                        Savor the Flavor
+                        Nikmati Sajian
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-                        A culinary journey celebrating local ingredients and global tastes.
+                        Hidangan yang disajikan dengan baik dan menggunakan bahan berkualitas.
                     </p>
                 </div>
             </div>
@@ -70,10 +70,10 @@ export default async function CafePage() {
                     <Section className="bg-background">
                         <div className="text-center mb-12">
                             <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-serif">
-                                Our Menu
+                                Menu
                             </h2>
                             <p className="text-gray-600">
-                                Freshly prepared with love and passion.
+                                Hidangan yang disajikan dengan baik dan menggunakan bahan berkualitas.
                             </p>
                         </div>
 
@@ -103,7 +103,7 @@ export default async function CafePage() {
                     <Section className="bg-subtle/5 pt-0 lg:pt-16">
                         <div className="text-center mb-8">
                             <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4 font-serif">
-                                The Atmosphere
+                                Suasana yang Asri
                             </h2>
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-64 md:h-80">
@@ -135,8 +135,8 @@ export default async function CafePage() {
                                 <div className="flex items-start">
                                     <FaMapMarkerAlt className="text-xl mt-1 mr-4 text-secondary/80" />
                                     <p className="leading-relaxed text-white/90">
-                                        123 Serenity Lane,<br />
-                                        Nature Valley, Lombok,<br />
+                                        Kotaraja,<br />
+                                        Sikur, Lombok Timur,<br />
                                         Indonesia
                                     </p>
                                 </div>
@@ -144,8 +144,8 @@ export default async function CafePage() {
                                     <FaClock className="text-xl mt-1 mr-4 text-secondary/80" />
                                     <div className="text-white/90">
                                         <p className="font-semibold mb-1">Opening Hours</p>
-                                        <p>Mon - Fri: 8am - 10pm</p>
-                                        <p>Sat - Sun: 8am - 11pm</p>
+                                        <p>Senin - Jumat: 10.00 - 22.00</p>
+                                        <p>Sabtu - Minggu: 10.00 - 23.59</p>
                                     </div>
                                 </div>
                             </div>
@@ -153,9 +153,9 @@ export default async function CafePage() {
 
                         {/* Reservation Form */}
                         <div>
-                            <h3 className="text-2xl font-bold mb-6 font-serif text-secondary">Reservations</h3>
+                            <h3 className="text-2xl font-bold mb-6 font-serif text-secondary">Reservasi</h3>
                             <p className="mb-6 text-white/80 text-sm">
-                                Reserve your spot for an unforgettable dining experience. For larger parties, please contact us directly.
+                                Reservasi tempat duduk untuk pengalaman kuliner yang tak terlupakan. Silahkan hubungi kami langsung.
                             </p>
                             <ReservationForm />
                         </div>
