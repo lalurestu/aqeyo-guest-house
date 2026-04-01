@@ -115,7 +115,7 @@ export default async function RoomsPage() {
                     {/* Data mock (nanti diisi dari database yang diinput admin) */}
                     {[
                         { title: "2 Kamar Tidur Utama", image: "/assets/img/img1.jpeg" },
-                        { title: "Kamar Mandi Semi Terbuka", image: "/assets/img/img2.jpeg" },
+                        { title: "Kolam Renang Luas", image: "/assets/img/img2.jpeg" },
                         { title: "Dapur Lengkap", image: "/assets/img/img3.jpeg" },
                         { title: "Ruang Keluarga Luas", image: "/assets/img/img4.jpeg" },
                         { title: "Teras Santai View Alam", image: "/assets/img/img5.jpeg" },
