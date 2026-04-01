@@ -2,19 +2,9 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import Image from "next/image";
-import { FaWifi, FaCoffee, FaShower, FaTv, FaSwimmingPool, FaParking } from "react-icons/fa";
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();
-
-const amenities = [
-    { icon: FaWifi, label: "Wi-Fi Gratis Kecepatan Tinggi" },
-    { icon: FaSwimmingPool, label: "Akses Kolam Renang" },
-    { icon: FaCoffee, label: "Sarapan Termasuk" },
-    { icon: FaParking, label: "Parkir Gratis" },
-    { icon: FaTv, label: "Smart TV di Kamar" },
-    { icon: FaShower, label: "Shower Air Panas & Dingin" },
-];
 
 // Helper to safe parse amenities
 const parseAmenities = (jsonString: string) => {
@@ -109,22 +99,43 @@ export default async function RoomsPage() {
                 </div>
             </Section>
 
-            {/* General Amenities Section */}
+            {/* House Facilities Section (Data dari Admin) */}
             <Section className="bg-subtle/5">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4 font-serif">
-                        Fasilitas yang Tersedia
+                <div className="text-center mb-16">
+                    <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-3 block">Paket Eksklusif</span>
+                    <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 font-serif">
+                        Fasilitas Sewa Satu Rumah
                     </h2>
-                    <p className="text-gray-600 max-w-2xl mx-auto">
-                        Semua yang Anda butuhkan untuk menginap dengan nyaman dan menyenangkan.
+                    <p className="text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                        Kami menawarkan paket penyewaan satu rumah utuh yang sudah mencakup berbagai fasilitas eksklusif untuk memberikan kenyamanan dan privasi maksimal bagi keluarga Anda.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                    {amenities.map((item, idx) => (
-                        <div key={idx} className="flex flex-col items-center justify-center p-6 bg-white rounded-xl shadow-sm border border-subtle/10 text-center hover:shadow-md transition-shadow">
-                            <item.icon className="text-3xl text-primary mb-3" />
-                            <span className="text-sm font-medium text-foreground">{item.label}</span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10 max-w-7xl mx-auto px-4">
+                    {/* Data mock (nanti diisi dari database yang diinput admin) */}
+                    {[
+                        { title: "2 Kamar Tidur Utama", image: "/assets/img/img1.jpeg" },
+                        { title: "Kamar Mandi Semi Terbuka", image: "/assets/img/img2.jpeg" },
+                        { title: "Dapur Lengkap", image: "/assets/img/img3.jpeg" },
+                        { title: "Ruang Keluarga Luas", image: "/assets/img/img4.jpeg" },
+                        { title: "Teras Santai View Alam", image: "/assets/img/img5.jpeg" },
+                        { title: "Area Parkir Pribadi", image: "/assets/img/img6.jpeg" },
+                    ].map((item, idx) => (
+                        <div key={idx} className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 border border-gray-100 flex flex-col">
+                            <div className="relative w-full h-64 overflow-hidden">
+                                <Image
+                                    src={item.image}
+                                    alt={item.title}
+                                    fill
+                                    className="object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                            </div>
+                            <div className="p-6 md:p-8 flex-grow flex items-center justify-center">
+                                <h3 className="text-xl md:text-2xl font-bold text-primary font-serif text-center group-hover:text-secondary transition-colors duration-300">
+                                    {item.title}
+                                </h3>
+                            </div>
                         </div>
                     ))}
                 </div>
