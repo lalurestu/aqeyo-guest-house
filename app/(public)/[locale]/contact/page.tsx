@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaWhatsapp, FaInstagram, FaClock, FaDirections } from "react-icons/fa";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function ContactPage() {
     const [status, setStatus] = useState<"idle" | "submitting" | "success">("idle");
+    const t = useTranslations('Contact');
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -35,10 +37,10 @@ export default function ContactPage() {
                 </div>
                 <div className="relative z-10 text-center px-4">
                     <h1 className="text-4xl md:text-6xl font-bold text-white font-serif mb-4">
-                        Tentang Kami
+                        {t('heroTitle')}
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-                        Mengenal lebih dekat AQEYO House & Social Space.
+                        {t('heroSubtitle')}
                     </p>
                 </div>
             </div>
@@ -47,12 +49,12 @@ export default function ContactPage() {
             <Section className="bg-subtle/5">
                 <div className="max-w-5xl mx-auto px-4">
                     <div className="text-center mb-16">
-                        <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-3 block">Cerita Kami</span>
+                        <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-3 block">{t('storyOverline')}</span>
                         <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 font-serif">
-                            Harmoni Alam & Kenyamanan
+                            {t('storyTitle')}
                         </h2>
                         <p className="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
-                            Berawal dari sebuah impian untuk menciptakan ruang di mana setiap orang dapat melarikan diri sejenak dari hiruk-pikuk kehidupan kota, AQEYO House berdiri sebagai oase ketenangan di tengah indahnya alam Lombok Timur.
+                            {t('storyDesc')}
                         </p>
                     </div>
 
@@ -62,25 +64,25 @@ export default function ContactPage() {
                         </div>
                         <div className="space-y-8">
                             <div>
-                                <h3 className="text-2xl font-bold text-primary font-serif mb-3">Visi Kami</h3>
+                                <h3 className="text-2xl font-bold text-primary font-serif mb-3">{t('visionTitle')}</h3>
                                 <p className="text-gray-600 leading-relaxed">
-                                    Menjadi destinasi *guesthouse* dan *social space* pilihan utama di Lombok yang menawarkan perpaduan sempurna antara keasrian alam, arsitektur estetik, dan keramahtamahan lokal yang tulus.
+                                    {t('visionDesc')}
                                 </p>
                             </div>
                             <div>
-                                <h3 className="text-2xl font-bold text-primary font-serif mb-3">Misi Kami</h3>
+                                <h3 className="text-2xl font-bold text-primary font-serif mb-3">{t('missionTitle')}</h3>
                                 <ul className="space-y-3 text-gray-600">
                                     <li className="flex items-start">
                                         <span className="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0" />
-                                        <span>Menyediakan fasilitas menginap yang eksklusif, bersih, dan privat.</span>
+                                        <span>{t('mission1')}</span>
                                     </li>
                                     <li className="flex items-start">
                                         <span className="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0" />
-                                        <span>Menyajikan ragam kuliner lokal dengan bahan terbaik dan cita rasa otentik.</span>
+                                        <span>{t('mission2')}</span>
                                     </li>
                                     <li className="flex items-start">
                                         <span className="w-2 h-2 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0" />
-                                        <span>Memberikan pelayanan yang personal dan hangat seperti di rumah sendiri.</span>
+                                        <span>{t('mission3')}</span>
                                     </li>
                                 </ul>
                             </div>
@@ -94,51 +96,51 @@ export default function ContactPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 max-w-6xl mx-auto px-4">
                     {/* Contact Info */}
                     <div>
-                        <h2 className="text-3xl font-bold text-primary mb-6 font-serif">Informasi Kontak</h2>
+                        <h2 className="text-3xl font-bold text-primary mb-6 font-serif">{t('infoTitle')}</h2>
                         <p className="text-gray-600 mb-8 leading-relaxed">
-                            Ada pertanyaan tentang pemesanan kamar atau menu cafe kami? Hubungi kami melalui whatsapp, instagram, email, atau kunjungi kami langsung.
+                            {t('infoDesc')}
                         </p>
 
                         <div className="space-y-6 mb-10">
                             <div className="flex items-start">
                                 <FaMapMarkerAlt className="text-secondary text-xl mt-1 mr-4" />
                                 <div>
-                                    <h4 className="font-semibold text-foreground">Alamat</h4>
-                                    <p className="text-gray-600">Kotaraja, Sikur, Lombok Timur, NTB, Indonesia</p>
+                                    <h4 className="font-semibold text-foreground">{t('addressLabel')}</h4>
+                                    <p className="text-gray-600">{t('addressVal')}</p>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <FaPhone className="text-secondary text-xl mr-4" />
                                 <div>
-                                    <h4 className="font-semibold text-foreground">Telepon</h4>
+                                    <h4 className="font-semibold text-foreground">{t('phoneLabel')}</h4>
                                     <a href="tel:+6285253357789" className="text-gray-600 hover:text-primary transition-colors">+62 852-5335-7789</a>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <FaEnvelope className="text-secondary text-xl mr-4" />
                                 <div>
-                                    <h4 className="font-semibold text-foreground">Email</h4>
+                                    <h4 className="font-semibold text-foreground">{t('emailLabel')}</h4>
                                     <a href="mailto:aqeyohouse@gmail.com" className="text-gray-600 hover:text-primary transition-colors">aqeyohouse@gmail.com</a>
                                 </div>
                             </div>
                             <div className="flex items-center">
                                 <FaWhatsapp className="text-secondary text-xl mr-4" />
                                 <div>
-                                    <h4 className="font-semibold text-foreground">WhatsApp</h4>
-                                    <a href="https://wa.me/6285253357789" className="text-gray-600 hover:text-primary transition-colors">Chat dengan kami</a>
+                                    <h4 className="font-semibold text-foreground">{t('waLabel')}</h4>
+                                    <a href="https://wa.me/6285253357789" className="text-gray-600 hover:text-primary transition-colors">{t('waVal')}</a>
                                 </div>
                             </div>
                             <div className="flex items-start bg-subtle/10 p-4 rounded-xl mt-4">
                                 <FaClock className="text-secondary text-xl mr-4 mt-1" />
                                 <div>
-                                    <h4 className="font-semibold text-foreground">Jam Layanan (CS)</h4>
-                                    <p className="text-gray-600 text-sm">Setiap Hari: 08:00 - 22:00 WITA<br />(Di luar jam tersebut, kami akan membalas pesan pada hari berikutnya)</p>
+                                    <h4 className="font-semibold text-foreground">{t('hoursLabel')}</h4>
+                                    <p className="text-gray-600 text-sm" dangerouslySetInnerHTML={{ __html: t.raw('hoursVal') }} />
                                 </div>
                             </div>
                         </div>
 
                         <div>
-                            <h4 className="font-semibold text-foreground mb-4">Ikuti Kami</h4>
+                            <h4 className="font-semibold text-foreground mb-4">{t('followLabel')}</h4>
                             <div className="flex space-x-4">
                                 <a href="https://www.instagram.com/aqeyohouse_/" className="w-10 h-10 rounded-full bg-subtle/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all">
                                     <FaInstagram className="text-xl" />
@@ -152,26 +154,26 @@ export default function ContactPage() {
 
                     {/* Contact Form */}
                     <div className="bg-white p-8 rounded-2xl shadow-lg border border-subtle/10">
-                        <h3 className="text-2xl font-bold text-primary mb-6 font-serif">Kirim Pesan</h3>
+                        <h3 className="text-2xl font-bold text-primary mb-6 font-serif">{t('formTitle')}</h3>
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Nama</label>
+                                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">{t('formName')}</label>
                                 <input type="text" id="name" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" />
                             </div>
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">{t('formEmail')}</label>
                                 <input type="email" id="email" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" />
                             </div>
                             <div>
-                                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subjek</label>
+                                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">{t('formSubject')}</label>
                                 <input type="text" id="subject" required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" />
                             </div>
                             <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Pesan</label>
+                                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">{t('formMessage')}</label>
                                 <textarea id="message" rows={4} required className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none" />
                             </div>
                             <Button type="submit" className="w-full" disabled={status === "submitting"}>
-                                {status === "submitting" ? "Mengirim..." : "Kirim Pesan"}
+                                {status === "submitting" ? t('formSending') : t('formBtn')}
                             </Button>
                         </form>
                     </div>
@@ -182,9 +184,9 @@ export default function ContactPage() {
             <Section className="bg-subtle/5 pb-12 pt-16">
                 <div className="max-w-4xl mx-auto px-4 text-center">
                     <FaDirections className="text-4xl text-secondary mx-auto mb-4" />
-                    <h2 className="text-3xl font-bold text-primary mb-4 font-serif">Cara Menuju Lokasi</h2>
+                    <h2 className="text-3xl font-bold text-primary mb-4 font-serif">{t('dirTitle')}</h2>
                     <p className="text-gray-600 leading-relaxed mb-8 max-w-2xl mx-auto">
-                        AQEYO House terletak di Desa Kotaraja yang sejuk dan asri. Berjarak sekitar 45 menit perjalanan darat dari Bandara Internasional Lombok (BIZAM) atau sekitar 1 jam berkendara dari pusat kota Mataram.
+                        {t('dirDesc')}
                     </p>
                 </div>
             </Section>

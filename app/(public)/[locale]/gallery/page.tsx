@@ -1,8 +1,10 @@
 import { Section } from "@/components/ui/Section";
 import GalleryGrid from "@/components/GalleryGrid";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 export default function GalleryPage() {
+    const t = useTranslations('Gallery');
     return (
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
@@ -19,20 +21,20 @@ export default function GalleryPage() {
                 </div>
                 <div className="relative z-10 text-center px-4">
                     <h1 className="text-4xl md:text-6xl font-bold text-white font-serif mb-4">
-                        Momen yang Terabadikan
+                        {t('heroTitle')}
                     </h1>
                     <p className="text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
-                        Momen kebersamaan anda dan AQEYO akan kami abadikan disini.
+                        {t('heroSubtitle')}
                     </p>
                 </div>
             </div>
 
             <Section className="bg-background pt-16">
                 <div className="max-w-4xl mx-auto px-4 text-center mb-12">
-                    <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-3 block">Jelajahi Ruang & Waktu</span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 font-serif">Koleksi Visual AQEYO</h2>
+                    <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-3 block">{t('overline')}</span>
+                    <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 font-serif">{t('title')}</h2>
                     <p className="text-gray-600 text-lg leading-relaxed">
-                        Menelusuri setiap sudut yang menyimpan cerita. Dari desain arsitektur yang menenangkan di guesthouse kami, hingga momen-momen hangat yang tercipta di social space. Temukan inspirasi liburan Anda selanjutnya melalui lensa kamera kami.
+                        {t('desc')}
                     </p>
                 </div>
                 <GalleryGrid />

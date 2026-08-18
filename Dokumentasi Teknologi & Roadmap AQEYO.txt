@@ -1,5 +1,5 @@
 Dokumentasi Teknologi & Roadmap Pengembangan Sistem AQEYO
-Dokumen ini menjelaskan secara teknis "Tech Stack" yang membangun website Bale Bangket, serta rekomendasi untuk pengembangan jangka panjang (scalability).
+Dokumen ini menjelaskan secara teknis "Tech Stack" yang membangun website AQEYO Guest House, serta rekomendasi untuk pengembangan jangka panjang (scalability).
 
 1. Core Framework: Next.js 16 (App Router)
 Apa itu?: Framework React paling populer saat ini untuk membangun aplikasi web full-stack. Anda menggunakan versi terbaru (16) dengan sistem App Router.
