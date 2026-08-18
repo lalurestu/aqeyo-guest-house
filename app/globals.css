@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  /* Color Palette */
+  /* Color Palette - Minimalist & Elegant */
+  --primary: #2C3E50;
+  /* Dark Slate - Sophisticated & Strong */
+  --primary-foreground: #FFFFFF;
+  --secondary: #C5A059;
+  /* Muted Gold - Elegant Accent */
+  --secondary-foreground: #FFFFFF;
+  --background: #FFFFFF;
+  /* Pure White */
+  --foreground: #1F2937;
+  /* Soft Black/Dark Gray */
+  --subtle: #F3F4F6;
+  /* Light Gray for sections */
+  --success: #10B981;
+  /* Emerald for success states */
+
+  /* Font Variables (will be set by next/font in layout) */
+  --font-sans: var(--font-geist-sans);
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-subtle: var(--subtle);
+  --color-success: var(--success);
+
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
