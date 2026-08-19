@@ -5,7 +5,7 @@ import { FaClock, FaMapMarkerAlt, FaCalendarAlt, FaCreditCard } from "react-icon
 import { PrismaClient } from "@prisma/client";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { Button } from "@/components/ui/Button";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 
 const prisma = new PrismaClient();
 
@@ -47,9 +47,7 @@ export default async function SocialSpacePage() {
             items: groupedMenus[cat]
         });
     });
-
-    const t = useTranslations('SocialSpace');
-
+    const t = await getTranslations('SocialSpace');
     return (
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}

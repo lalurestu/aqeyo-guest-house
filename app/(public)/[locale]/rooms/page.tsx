@@ -267,17 +267,17 @@ export default function RoomsPage() {
                             <div className="bg-subtle/5 p-8 rounded-3xl border border-subtle/10 hover:shadow-md transition-shadow">
                                 <h3 className="text-xl font-bold text-primary mb-4 border-b border-subtle/20 pb-2">{t('opsTitle')}</h3>
                                 <ul className="space-y-4">
-                                    <li className="flex justify-between items-center text-sm md:text-base">
-                                        <span className="text-gray-600">{t('booking')}</span>
-                                        <span className="font-bold text-primary bg-primary/10 px-3 py-1 rounded-full text-right">{t('bookingVal')}</span>
+                                    <li className="flex justify-between items-center border-b border-subtle/10 pb-3 last:border-0 last:pb-0">
+                                        <span className="text-gray-600 text-sm md:text-base font-medium">{t('booking')}</span>
+                                        <span className="font-bold text-primary bg-primary/10 px-3 py-1 md:px-4 md:py-1.5 rounded-full text-xs md:text-sm whitespace-nowrap">{t('bookingVal')}</span>
                                     </li>
-                                    <li className="flex justify-between items-center text-sm md:text-base">
-                                        <span className="text-gray-600">{t('checkin')}</span>
-                                        <span className="font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">{t('checkinVal')}</span>
+                                    <li className="flex justify-between items-center border-b border-subtle/10 pb-3 last:border-0 last:pb-0">
+                                        <span className="text-gray-600 text-sm md:text-base font-medium">{t('checkin')}</span>
+                                        <span className="font-bold text-primary bg-primary/10 px-3 py-1 md:px-4 md:py-1.5 rounded-full text-xs md:text-sm whitespace-nowrap">{t('checkinVal')}</span>
                                     </li>
-                                    <li className="flex justify-between items-center text-sm md:text-base">
-                                        <span className="text-gray-600">{t('checkout')}</span>
-                                        <span className="font-bold text-primary bg-primary/10 px-3 py-1 rounded-full">{t('checkoutVal')}</span>
+                                    <li className="flex justify-between items-center border-b border-subtle/10 pb-3 last:border-0 last:pb-0">
+                                        <span className="text-gray-600 text-sm md:text-base font-medium">{t('checkout')}</span>
+                                        <span className="font-bold text-primary bg-primary/10 px-3 py-1 md:px-4 md:py-1.5 rounded-full text-xs md:text-sm whitespace-nowrap">{t('checkoutVal')}</span>
                                     </li>
                                 </ul>
                             </div>
