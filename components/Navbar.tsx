@@ -8,6 +8,7 @@ import { twMerge } from "tailwind-merge";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navbar() {
@@ -32,9 +33,14 @@ export default function Navbar() {
                 <div className="flex items-center justify-between h-20">
                     {/* Logo */}
                     <Link href="/" className="flex-shrink-0">
-                        <span className="text-2xl font-bold text-primary font-serif tracking-wide">
-                            AQEYO
-                        </span>
+                        <Image
+                            src="/assets/img/logo.png"
+                            alt="AQEYO Logo"
+                            width={120}
+                            height={40}
+                            className="h-10 w-auto object-contain"
+                            priority
+                        />
                     </Link>
 
                     {/* Desktop Navigation */}
