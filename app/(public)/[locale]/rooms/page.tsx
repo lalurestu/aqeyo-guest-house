@@ -15,7 +15,7 @@ export default function RoomsPage() {
             <div className="relative h-[calc(100vh-80px)] w-full flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0">
                     <Image
-                        src="/assets/img/img8.jpeg"
+                        src="/assets/img/rooms/space3.jpeg"
                         alt="Room Interior"
                         fill
                         className="object-cover"
@@ -24,7 +24,7 @@ export default function RoomsPage() {
                     <div className="absolute inset-0 bg-black/50" />
                 </div>
                 <div className="relative z-10 text-center px-4">
-                    <h1 
+                    <h1
                         className="text-4xl md:text-6xl font-bold text-white font-serif mb-4"
                         dangerouslySetInnerHTML={{ __html: t.raw('heroTitle') }}
                     />
@@ -53,17 +53,17 @@ export default function RoomsPage() {
                             {
                                 title: t('fac1Title'),
                                 desc: t('fac1Desc'),
-                                image: "/assets/img/img1.jpeg"
+                                image: "/assets/imgrooms/bed3.jpeg"
                             },
                             {
                                 title: t('fac2Title'),
                                 desc: t('fac2Desc'),
-                                image: "/assets/img/img2.jpeg"
+                                image: "/assets/img/rooms/pool4.jpeg"
                             },
                             {
                                 title: t('fac3Title'),
                                 desc: t('fac3Desc'),
-                                image: "/assets/img/img3.jpeg"
+                                image: "/assets/img/rooms/space2.jpeg"
                             },
                         ].map((item, idx) => (
                             <div key={idx} className={`flex flex-col md:flex-row items-center gap-8 md:gap-16 ${idx % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}>
