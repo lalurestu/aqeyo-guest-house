@@ -34,7 +34,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex-shrink-0">
                         <Image
-                            src="/assets/img/logo.png"
+                            src="/assets/img/logo_type.png"
                             alt="AQEYO Logo"
                             width={120}
                             height={40}
