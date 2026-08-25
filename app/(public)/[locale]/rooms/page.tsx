@@ -53,7 +53,7 @@ export default function RoomsPage() {
                             {
                                 title: t('fac1Title'),
                                 desc: t('fac1Desc'),
-                                image: "/assets/imgrooms/bed3.jpeg"
+                                image: "/assets/img/rooms/bed3.jpeg"
                             },
                             {
                                 title: t('fac2Title'),
@@ -100,7 +100,7 @@ export default function RoomsPage() {
                                 {t('amenitiesTitle')}
                             </h2>
                         </div>
-                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 text-center">
+                        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 text-center">
                             <div className="p-6 bg-subtle/5 rounded-2xl hover:shadow-md transition-shadow border border-subtle/10">
                                 <FaWifi className="text-4xl text-secondary mx-auto mb-4" />
                                 <h4 className="font-bold text-primary text-sm md:text-base">{t('amenityWifi')}</h4>
@@ -108,6 +108,10 @@ export default function RoomsPage() {
                             <div className="p-6 bg-subtle/5 rounded-2xl hover:shadow-md transition-shadow border border-subtle/10">
                                 <FaSnowflake className="text-4xl text-secondary mx-auto mb-4" />
                                 <h4 className="font-bold text-primary text-sm md:text-base">{t('amenityAc')}</h4>
+                            </div>
+                            <div className="p-6 bg-subtle/5 rounded-2xl hover:shadow-md transition-shadow border border-subtle/10">
+                                <FaTv className="text-4xl text-secondary mx-auto mb-4" />
+                                <h4 className="font-bold text-primary text-sm md:text-base">{t('amenityTv')}</h4>
                             </div>
                             <div className="p-6 bg-subtle/5 rounded-2xl hover:shadow-md transition-shadow border border-subtle/10">
                                 <FaSwimmingPool className="text-4xl text-secondary mx-auto mb-4" />
