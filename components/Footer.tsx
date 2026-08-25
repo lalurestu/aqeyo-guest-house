@@ -87,11 +87,11 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-6 text-white border-b border-gray-600 pb-2 inline-block">{t('openingHours')}</h3>
                         <ul className="space-y-2 text-background">
                             <li className="flex justify-between">
-                                <span>Sen - Jum:</span>
+                                <span>{t('weekdays')}</span>
                                 <span>09.00 - 22.00</span>
                             </li>
                             <li className="flex justify-between">
-                                <span>Sab - Min:</span>
+                                <span>{t('weekends')}</span>
                                 <span>09.00 - 23.59</span>
                             </li>
                         </ul>

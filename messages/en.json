@@ -61,6 +61,8 @@
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "openingHours": "Opening Hours",
+    "weekdays": "Mon - Fri:",
+    "weekends": "Sat - Sun:",
     "rightsReserved": "AQEYO. All rights reserved."
   },
   "Rooms": {
