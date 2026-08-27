@@ -58,7 +58,7 @@ export default function RoomsPage() {
                             {
                                 title: t('fac2Title'),
                                 desc: t('fac2Desc'),
-                                image: "/assets/img/rooms/pool4.jpeg"
+                                image: "/assets/img/rooms/pool-pagi1.jpeg"
                             },
                             {
                                 title: t('fac3Title'),

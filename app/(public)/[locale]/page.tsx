@@ -3,6 +3,7 @@ import { Section } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { Link } from "@/i18n/routing";
+import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import Image from "next/image";
 import { FaStar, FaQuoteLeft, FaLeaf, FaHome, FaCoffee, FaQuestionCircle } from "react-icons/fa";
 import { useTranslations } from "next-intl";
@@ -14,46 +15,50 @@ export default function Home(props: any) {
       <Hero />
 
       {/* Our Story / Welcome Section */}
-      <Section className="bg-background">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 font-serif">
-            {t('welcomeTitle')}
-          </h2>
-          <p className="text-lg text-gray-600 leading-relaxed mb-8">
-            {t('welcomeText')}
-          </p>
-          <div className="w-24 h-1 bg-secondary mx-auto rounded-full" />
-        </div>
-      </Section>
+      <ScrollReveal>
+        <Section className="bg-background">
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 font-serif">
+              {t('welcomeTitle')}
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              {t('welcomeText')}
+            </p>
+            <div className="w-24 h-1 bg-secondary mx-auto rounded-full" />
+          </div>
+        </Section>
+      </ScrollReveal>
 
       {/* USP / Value Proposition Section */}
-      <Section className="bg-subtle/10 py-12 border-y border-subtle/20">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary text-2xl">
-                <FaLeaf />
+      <ScrollReveal delay={0.1}>
+        <Section className="bg-subtle/10 py-12 border-y border-subtle/20">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+              <div className="p-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary text-2xl">
+                  <FaLeaf />
+                </div>
+                <h3 className="text-xl font-bold font-serif text-primary mb-2">{t('usp1Title')}</h3>
+                <p className="text-gray-600">{t('usp1Desc')}</p>
               </div>
-              <h3 className="text-xl font-bold font-serif text-primary mb-2">{t('usp1Title')}</h3>
-              <p className="text-gray-600">{t('usp1Desc')}</p>
-            </div>
-            <div className="p-6 border-y md:border-y-0 md:border-x border-subtle/20">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary text-2xl">
-                <FaHome />
+              <div className="p-6 border-y md:border-y-0 md:border-x border-subtle/20">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary text-2xl">
+                  <FaHome />
+                </div>
+                <h3 className="text-xl font-bold font-serif text-primary mb-2">{t('usp2Title')}</h3>
+                <p className="text-gray-600">{t('usp2Desc')}</p>
               </div>
-              <h3 className="text-xl font-bold font-serif text-primary mb-2">{t('usp2Title')}</h3>
-              <p className="text-gray-600">{t('usp2Desc')}</p>
-            </div>
-            <div className="p-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary text-2xl">
-                <FaCoffee />
+              <div className="p-6">
+                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 text-primary text-2xl">
+                  <FaCoffee />
+                </div>
+                <h3 className="text-xl font-bold font-serif text-primary mb-2">{t('usp3Title')}</h3>
+                <p className="text-gray-600">{t('usp3Desc')}</p>
               </div>
-              <h3 className="text-xl font-bold font-serif text-primary mb-2">{t('usp3Title')}</h3>
-              <p className="text-gray-600">{t('usp3Desc')}</p>
             </div>
           </div>
-        </div>
-      </Section>
+        </Section>
+      </ScrollReveal>
 
       {/* Call to Action Section */}
       <Section className="relative bg-primary overflow-hidden">
@@ -130,35 +135,37 @@ export default function Home(props: any) {
 
 
       {/* AQEYO Experience */}
-      <Section className="bg-background py-16">
-        <div className="max-w-6xl mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl">
-              <Image src="/assets/img/img7.jpeg" alt="AQEYO Experience" fill className="object-cover hover:scale-105 transition-transform duration-700" />
-            </div>
-            <div>
-              <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-3 block">{t('expOverline')}</span>
-              <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 font-serif leading-tight">
-                {t('expTitle')}
-              </h2>
-              <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                {t('expDesc1')}
-              </p>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
-                {t('expDesc2')}
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Link href="/rooms">
-                  <Button className="px-8 py-3 rounded-full text-lg shadow-lg hover:-translate-y-1 transition-all">{t('expBtn1')}</Button>
-                </Link>
-                <Link href="/social-space">
-                  <Button variant="outline" className="px-8 py-3 rounded-full text-lg hover:-translate-y-1 transition-all border-primary text-primary hover:bg-primary/5">{t('expBtn2')}</Button>
-                </Link>
+      <ScrollReveal delay={0.2}>
+        <Section className="bg-background py-16">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="relative h-[400px] rounded-3xl overflow-hidden shadow-2xl">
+                <Image src="/assets/img/img7.jpeg" alt="AQEYO Experience" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+              </div>
+              <div>
+                <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-3 block">{t('expOverline')}</span>
+                <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6 font-serif leading-tight">
+                  {t('expTitle')}
+                </h2>
+                <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                  {t('expDesc1')}
+                </p>
+                <p className="text-gray-600 text-lg leading-relaxed mb-8">
+                  {t('expDesc2')}
+                </p>
+                <div className="flex flex-wrap gap-4">
+                  <Link href="/rooms">
+                    <Button className="px-8 py-3 rounded-full text-lg shadow-lg hover:-translate-y-1 transition-all">{t('expBtn1')}</Button>
+                  </Link>
+                  <Link href="/social-space">
+                    <Button variant="outline" className="px-8 py-3 rounded-full text-lg hover:-translate-y-1 transition-all border-primary text-primary hover:bg-primary/5">{t('expBtn2')}</Button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </Section>
+        </Section>
+      </ScrollReveal>
 
       {/* Momen di AQEYO */}
       <Section className="py-16 bg-white">
