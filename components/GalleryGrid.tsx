@@ -26,6 +26,11 @@ const photos = [
     // { id: 15, src: "/assets/img/rooms/room4.jpeg", category: "Guesthouse", alt: "Room 4" },
     // { id: 16, src: "/assets/img/rooms/room5.jpeg", category: "Guesthouse", alt: "Room 5" },
     { id: 17, src: "/assets/img/rooms/room6.jpeg", category: "Guesthouse", alt: "Room 6" },
+    { id: 31, src: "/assets/img/rooms/parking-pagi.jpeg", category: "Guesthouse", alt: "Morning Parking" },
+    { id: 32, src: "/assets/img/rooms/pool-pagi1.jpeg", category: "Guesthouse", alt: "Morning Pool 1" },
+    { id: 33, src: "/assets/img/rooms/pool-pagi2.jpeg", category: "Guesthouse", alt: "Morning Pool 2" },
+    { id: 34, src: "/assets/img/rooms/space-pagi1.jpeg", category: "Guesthouse", alt: "Morning Space 1" },
+    { id: 35, src: "/assets/img/rooms/space-pagi2.jpeg", category: "Guesthouse", alt: "Morning Space 2" },
 
     // Social Space
     { id: 18, src: "/assets/img/rooms/space1.jpeg", category: "Social Space", alt: "Space 1" },
