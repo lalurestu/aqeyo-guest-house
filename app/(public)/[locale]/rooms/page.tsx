@@ -254,6 +254,33 @@ export default function RoomsPage() {
                 </Section>
             </ScrollReveal>
 
+            {/* Suasana Pagi Section */}
+            <ScrollReveal delay={0.25}>
+                <Section className="py-16 bg-white border-t border-subtle/10">
+                    <div className="max-w-6xl mx-auto px-4 text-center mb-12">
+                        <span className="text-secondary font-semibold tracking-wider uppercase text-sm mb-3 block">Morning Vibes</span>
+                        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6 font-serif">Suasana Pagi di AQEYO</h2>
+                        <p className="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+                            Nikmati ketenangan dan keasrian momen pagi hari di AQEYO House.
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 max-w-7xl mx-auto px-4">
+                        {[
+                            "/assets/img/rooms/parking-pagi.jpeg",
+                            "/assets/img/rooms/pool-pagi1.jpeg",
+                            "/assets/img/rooms/pool-pagi2.jpeg",
+                            "/assets/img/rooms/space-pagi1.jpeg",
+                            "/assets/img/rooms/space-pagi2.jpeg"
+                        ].map((src, idx) => (
+                            <div key={idx} className="relative h-48 md:h-64 rounded-xl overflow-hidden group cursor-pointer shadow-md">
+                                <Image src={src} alt={`Suasana Pagi ${idx + 1}`} fill sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 20vw" className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300"></div>
+                            </div>
+                        ))}
+                    </div>
+                </Section>
+            </ScrollReveal>
+
             {/* House Rules Section */}
             <ScrollReveal delay={0.3}>
                 <Section className="bg-background border-t border-subtle/10">
